@@ -1,0 +1,166 @@
+/* desktop size */
+body{
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 400px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+
+.head-container{
+    background-color: gray;
+    min-height: 100px;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: ivory;
+    font-size: 1rem;
+}
+
+.myBtn{
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+.col{
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: cadetblue;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+p{
+    color: white;
+    margin: 5px 5px;
+}
+
+.col:first-child p::first-line{
+    font-weight: bold;
+}
+
+.burger-icon
+{
+    width: 20px;
+    display: none;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* tablet size */
+@media(max-width: 768px)
+{
+    .col{
+        width: 45%;
+    }
+
+    .hide-desktop-only{
+        display: block;
+    }
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .logo{
+        padding: 40px 0;
+    }
+
+    .myBtn
+    {
+        margin-left: 0px;
+    }
+
+    .head-container{
+        position: relative;
+    }
+
+    .container{
+        padding-top: 0px;
+    }
+
+    .burger-icon
+    {
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav
+    {
+        display: none;
+        position: absolute;
+    }
+
+    .navBtn
+    {
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: tomato ;
+        padding: 10px 20px;
+        margin-left: -90px;
+        border-style: solid;
+        border-width: 1px;
+    }
+}
+
+/* mobile size */
+@media(max-width:500px)
+{
+    .col{
+        width: 90%;
+    }
+
+    .hide-desktop-only{
+        display: none;
+    }
+    
+}
